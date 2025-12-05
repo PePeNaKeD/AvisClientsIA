@@ -121,7 +121,7 @@ else:
 # --- 5. UI DASHBOARD (LA PARTIE VISUELLE) ---
 
 # En-tête Simple
-st.title("🤖 Review Intel AI")
+st.title(" ReviewBot AI")
 st.caption("Analyse sémantique et scoring automatique des avis clients via Gemini Flash 2.0")
 
 st.write("") # Petit espacement
