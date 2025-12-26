@@ -1,7 +1,7 @@
-🤖 Review Intel AI : Analyseur de Sentiment Intelligent
+AVIS CLIENTS IA
+Description de mon projet 🤖 Review Intel AI : Analyseur de Sentiment Intelligent
 
-Transformer le chaos des avis clients en décisions stratégiques.
-Un dashboard interactif qui ingère des données brutes, utilise un LLM pour scorer la satisfaction client en temps réel, et automatise le reporting.
+Transformer le chaos des avis clients en décisions stratégiques. Un dashboard interactif qui ingère des données brutes, utilise un LLM pour scorer la satisfaction client en temps réel, et automatise le reporting.
 
 🎯 Le Problème (Business Case)
 
@@ -43,18 +43,15 @@ Visualisation : Plotly
 
 🚀 Comment lancer le projet ?
 
-# 1. Cloner le repo
-git clone [https://github.com/TON-PSEUDO/review-intel-ai.git](https://github.com/TON-PSEUDO/review-intel-ai.git)
-cd review-intel-ai
+1. Cloner le repo
+git clone https://github.com/TON-PSEUDO/review-intel-ai.git cd review-intel-ai
 
-# 2. Installer les dépendances
+2. Installer les dépendances
 pip install -r requirements.txt
 
-# 3. Configurer l'API (Optionnel - Sinon via l'interface)
-# Renommez .env.example en .env et ajoutez votre GOOGLE_API_KEY
-
-# 4. Lancer l'application
+3. Configurer l'API (Optionnel - Sinon via l'interface)
+Renommez .env.example en .env et ajoutez votre GOOGLE_API_KEY
+4. Lancer l'application
 streamlit run app_avis.py
-
 
 Projet réalisé dans le cadre de mon Portfolio Data Analyst / Engineer.
