@@ -1,59 +1,74 @@
-AVIS CLIENTS IA
-Description de mon projet 🤖 Review Intel AI : Analyseur de Sentiment Intelligent
+🤖 Review Intel AI : Analyseur de Sentiment Intelligent
 
-Transformer le chaos des avis clients en décisions stratégiques. Un dashboard interactif qui ingère des données brutes, utilise un LLM pour scorer la satisfaction client en temps réel, et automatise le reporting.
+Transformer le chaos des avis clients en décisions stratégiques.
+
+Review Intel AI est un dashboard interactif qui ingère des données brutes, utilise un LLM (Google Gemini) pour scorer la satisfaction client en temps réel, et automatise le reporting via une interface visuelle.
 
 🎯 Le Problème (Business Case)
 
-Dans le secteur du service, le volume d'avis (Google, TripAdvisor) est massif et non structuré. L'analyse manuelle est impossible à l'échelle, entraînant une perte d'information critique sur la satisfaction client ("Service lent", "Plats froids").
+Dans le secteur du service, le volume d'avis (Google, TripAdvisor) est massif et non structuré. L'analyse manuelle est impossible à l'échelle, entraînant une perte d'information critique sur la satisfaction client (ex: détection tardive de problèmes récurrents comme "Service lent" ou "Plats froids").
 
 💡 La Solution
 
-J'ai développé une pipeline Data & IA capable de traiter ces données textuelles instantanément :
+Une pipeline Data & IA capable de traiter ces données textuelles instantanément :
 
-Ingestion de fichiers de données brutes (CSV/Excel).
+Ingestion de fichiers de données brutes (CSV).
 
 Traitement NLP via l'API Google Gemini 2.0 Flash (Analyse de sentiment + Scoring /5).
 
 Restitution via un Dashboard Streamlit interactif pour les managers.
 
-✨ Compétences Clés "Data Engineer"
+✨ Compétences Clés & Challenges Techniques
 
-Ce projet démontre ma capacité à intégrer l'IA dans un flux de production :
+Ce projet démontre l'intégration de l'IA dans un flux de production robuste :
 
-🧠 Prompt Engineering Avancé : Configuration stricte du LLM pour obtenir une sortie JSON structurée exploitable par le code (pas de texte libre), garantissant la stabilité du pipeline.
+🧠 Prompt Engineering Avancé : Configuration stricte du LLM pour obtenir une sortie JSON structurée exploitable par le code (pas de texte libre), garantissant la stabilité du pipeline ETL.
 
-⚡ Optimisation API (Caching) : Utilisation de @st.cache_data pour stocker les résultats d'analyse et réduire la latence et les coûts d'appels API.
+⚡ Optimisation API (Caching) : Utilisation de @st.cache_data pour stocker les résultats d'analyse, réduisant drastiquement la latence et les coûts d'appels API.
 
-🔒 Gestion de la Sécurité : Implémentation des variables d'environnement (.env) pour sécuriser les clés API, avec un fallback UI pour la démonstration.
+🔒 Sécurité : Gestion des secrets via variables d'environnement (.env) pour sécuriser les clés API.
 
-📊 Data Visualization : Création de KPIs dynamiques et de graphiques interactifs avec Plotly Express.
+📊 Data Visualization : Création de KPIs dynamiques et graphiques interactifs avec Plotly Express.
 
 🛠️ Stack Technique
 
 Langage : Python
 
-Framework Data App : Streamlit
+App Framework : Streamlit
 
 Moteur IA : Google Generative AI (Gemini 2.0 Flash)
 
-Manipulation de Données : Pandas
+Data Manipulation : Pandas
 
-Visualisation : Plotly
+Visualisation : Plotly Express
 
-🚀 Comment lancer le projet ?
+🚀 Installation et Lancement
 
-1. Cloner le repo
-git clone https://github.com/TON-PSEUDO/review-intel-ai.git cd review-intel-ai
+Cloner le repo
 
-2. Installer les dépendances
+git clone [https://github.com/TON-PSEUDO/review-intel-ai.git](https://github.com/TON-PSEUDO/review-intel-ai.git)
+cd review-intel-ai
+
+
+Installer les dépendances
+
 pip install -r requirements.txt
 
-3. Configurer l'API (Optionnel - Sinon via l'interface)
-Renommez .env.example en .env et ajoutez votre GOOGLE_API_KEY
-4. Lancer l'application
+
+Configuration (API Key)
+
+Renommez .env.example en .env
+
+Ajoutez votre clé : GOOGLE_API_KEY=votre_clé_ici
+
+Note : Une interface de secours permet de saisir la clé directement dans l'app pour les tests.
+
+Lancer l'application
+
 streamlit run app_avis.py
 
-Projet réalisé dans le cadre de mon Portfolio Data Analyst / Engineer.
 
+👤 Shayaan SHAKHUN
 
+Projet réalisé dans le cadre de mon Portfolio Data Analyst / Data Engineer.
+Lien vers mon LinkedIn
