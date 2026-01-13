@@ -56,3 +56,4 @@ streamlit run app_avis.py
 
 Projet réalisé dans le cadre de mon Portfolio Data Analyst / Engineer.
 
+
